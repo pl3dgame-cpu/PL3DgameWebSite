@@ -10,8 +10,11 @@
   <!-- Header -->
 <header class="border-b border-gray-200 p-6">
   <div class="flex justify-between items-center">
-    <!-- Logo -->
-    <h1 class="text-2xl font-bold">PL3Dgame</h1>
+    <!-- Logo + Title -->
+    <div class="flex items-center space-x-3">
+      <img src="images/Logo_Round.png" alt="PL3Dgame Logo" class="w-10 h-10">
+      <h1 class="text-2xl font-bold">PL3Dgame</h1>
+    </div>
 
     <!-- Hamburger Button (mobile only) -->
     <button id="menu-btn" class="sm:hidden text-gray-700 focus:outline-none">
@@ -22,8 +25,8 @@
     </button>
 
     <!-- Desktop Navigation -->
-    <nav>
-      <ul id="menu" class="hidden sm:flex space-x-6">
+    <nav class="hidden sm:flex">
+      <ul class="flex space-x-6">
         <li><a href="#home" class="hover:text-blue-600">Home</a></li>
         <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
         <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
@@ -49,6 +52,7 @@
     mobileMenu.classList.toggle('hidden');
   });
 </script>
+
 
 
   <!-- Hero Section -->
