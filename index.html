@@ -21,7 +21,7 @@
       </svg>
     </button>
 
-    <!-- Navigation -->
+    <!-- Desktop Navigation -->
     <nav>
       <ul id="menu" class="hidden sm:flex space-x-6">
         <li><a href="#home" class="hover:text-blue-600">Home</a></li>
@@ -32,12 +32,23 @@
   </div>
 
   <!-- Mobile Menu -->
-  <ul id="mobile-menu" class="sm:hidden hidden mt-4 flex flex-col space-y-2">
-    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-    <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
-    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-  </ul>
+  <nav id="mobile-menu" class="sm:hidden hidden mt-4">
+    <ul class="flex flex-col space-y-2">
+      <li><a href="#home" class="hover:text-blue-600 block">Home</a></li>
+      <li><a href="#portfolio" class="hover:text-blue-600 block">Portfolio</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 block">Contact</a></li>
+    </ul>
+  </nav>
 </header>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 
   <!-- Hero Section -->
