@@ -8,19 +8,37 @@
 </head>
 <body class="bg-white text-gray-900 font-sans">
   <!-- Header -->
-  <header class="flex justify-between items-center p-6 border-b border-gray-200">
-    <div class="flex items-center space-x-3">
-      <img src="images/Logo_Round.png" alt="PL3Dgame Logo" class="h-14 w-14 object-contain">
-      <span class="text-2xl font-bold">PL3Dgame</span>
-    </div>
+<header class="border-b border-gray-200 p-6">
+  <div class="flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="text-2xl font-bold">PL3Dgame</h1>
+
+    <!-- Hamburger Button (mobile only) -->
+    <button id="menu-btn" class="sm:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+
+    <!-- Navigation -->
     <nav>
-      <ul class="flex space-x-6">
-        <li><a href="#home" class="hover:text-orange-500">Home</a></li>
-        <li><a href="#portfolio" class="hover:text-orange-500">Portfolio</a></li>
-        <li><a href="#contact" class="hover:text-orange-500">Contact</a></li>
+      <ul id="menu" class="hidden sm:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul id="mobile-menu" class="sm:hidden hidden mt-4 flex flex-col space-y-2">
+    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+    <li><a href="#portfolio" class="hover:text-blue-600">Portfolio</a></li>
+    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+  </ul>
+</header>
+
 
   <!-- Hero Section -->
   <section id="home" class="flex flex-col items-center justify-center text-center py-24 bg-orange-100">
